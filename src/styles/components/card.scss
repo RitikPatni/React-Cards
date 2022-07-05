@@ -1,0 +1,39 @@
+.card {
+  &__logo {
+    // NOTE: Need something better or preferably white logo which I couldn't find right now
+    mix-blend-mode: lighten;
+    aspect-ratio: 1;
+    width: 2rem;
+  }
+  &__number {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  &__name {
+    font-weight: 500;
+  }
+  &__expiry {
+    font-size: 0.75rem;
+    font-weight: 600;
+    align-self: end;
+    &__title {
+      font-size: 0.875rem;
+    }
+  }
+}
+.card-wrapper {
+  padding: 1rem;
+  border-radius: var(--card-radius);
+  color: var(--white);
+  display: grid;
+  gap: 1rem;
+  background-image: url(../../assets/mastercard-logo.png);
+  background-position-x: right;
+  background-position-y: bottom;
+  background-size: 4rem;
+  background-repeat: no-repeat;
+  aspect-ratio: 16 / 9;
+  height: 10rem;
+  justify-content: start;
+  text-align: left;
+}

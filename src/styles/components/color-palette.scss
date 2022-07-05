@@ -1,0 +1,11 @@
+.color-palette {
+  display: flex;
+  gap: 0.25rem;
+  justify-content: center;
+  &__button {
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    padding: 1rem;
+  }
+}

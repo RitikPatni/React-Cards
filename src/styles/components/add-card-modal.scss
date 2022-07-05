@@ -1,0 +1,48 @@
+.add-card-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all ease 1s;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  &__content {
+    overflow-y: auto;
+    background-color: var(--white);
+    padding: 3rem 1rem 1rem 1rem;
+    border-radius: var(--card-radius);
+    max-width: 75vw;
+    max-height: 75vh;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    justify-items: center;
+    &__close-button {
+      background: var(--white);
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+    }
+    &__confirm {
+      background: var(--primary-color);
+      color: var(--white);
+      padding: 1rem 3rem;
+      border: none;
+      border-radius: 2rem;
+      margin-top: 2rem;
+      &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: not-allowed;
+      }
+    }
+  }
+}

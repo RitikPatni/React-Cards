@@ -1,0 +1,16 @@
+@import "./partials/reset";
+@import "./partials/variables";
+body {
+  font-family: sans-serif;
+}
+.cards {
+  max-width: 80rem;
+  margin: 0 auto;
+  min-height: 100vh;
+  &__section {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+  }
+}

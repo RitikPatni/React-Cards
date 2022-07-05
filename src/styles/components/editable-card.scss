@@ -1,0 +1,17 @@
+.editable-card {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  &__input {
+    border: none;
+    border-bottom: 1px solid var(--white);
+    background: transparent;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+  }
+  &__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
